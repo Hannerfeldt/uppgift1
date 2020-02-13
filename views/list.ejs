@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List</title>
+</head>
+
+<body>
+    <form action="/" method="Post">
+        <input type="text" name="listitem">
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+        <% arr.forEach( (result, index)=> { %>
+        <li> <%= result.listitem %></li>
+        <a href="/update/<%= index %>">update</a>
+        <a href="/delete/<%= index %>">delete</a>
+        <% }) %>
+    </ul>
+</body>
+
+</html>
