@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>List</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <form action="/" method="Post">
-        <input type="text" name="listitem">
-        <button type="submit">Add</button>
+        <input type="text" name="listitem"><button type="submit">Add</button>
     </form>
+    <a href="/sort/sort">Sort</a>
 
     <ul>
-        <% arr.forEach( (result, index)=> { %>
-        <li> <%= result.listitem %></li>
+        <% tempArr.forEach( (result, index)=> { %>
+        <li> <%= result.listitem %></br><%= result.date%></li>
         <a href="/update/<%= index %>">update</a>
         <a href="/delete/<%= index %>">delete</a>
         <% }) %>
     </ul>
+    <% for( i = 0; i < Math.ceil(arrLength/5); i++){ %>
+    <a href="/<%= i %>"><%= (i+1) %></a>
+    <% } %>
+
 </body>
 
 </html>
