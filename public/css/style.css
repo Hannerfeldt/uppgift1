@@ -1,54 +1,46 @@
-@font-face {
-    font-family: "myfont";
-    src: url(../font/MS\ Sans\ Serif.ttf);    
-}
-body{
-    margin:0;
-    padding:0;
-    background-color: rgb(170, 170, 170);
-    text-align: center;
-    font-family: "myfont";
-}
-form{
-    padding:20px 0;
-    margin: 0px auto;
-    background-color: rgb(133, 133, 133);
-    border:5px solid rgb(158, 158, 158);
-    
-}
-form input{
-    box-sizing: border-box;
-    width: 50%;
-    height:50px;
-    vertical-align: middle;
-    font-size: 20pt;
-    border-style: inset;
-    border-width: 3px;
-    border-color: gray;
-}
-form button{
-    height: 50px;
-    width:100px;
-    vertical-align: middle;
-    font-size: 20pt;
-    cursor: pointer;
-    background-color: rgb(202, 202, 202);
-    font-family: "myfont";
-}
-ul{
-    
-    padding:0;
-}
-ul li {
-    
-    list-style: none;
-    margin-top:20px;
-    font-size: 18pt;
-}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aaaaaa;
+  text-align: center;
+  font-family: myfont; }
 
-a{
-    text-decoration: none;
-    font-size: 16pt;
-    margin: 0 10px;
-    color:white;
-}
+form {
+  padding: 20px 0;
+  margin: 0px auto;
+  background-color: #3f3f3f;
+  border: 5px solid #616161; }
+
+form input {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50px;
+  vertical-align: middle;
+  font-size: 20pt;
+  border-style: inset;
+  border-width: 3px;
+  border-color: gray;
+  font-family: "myfont"; }
+
+form button {
+  height: 50px;
+  width: 100px;
+  vertical-align: middle;
+  font-size: 20pt;
+  cursor: pointer;
+  background-color: #cacaca;
+  font-family: "myfont"; }
+
+ul {
+  padding: 0; }
+
+ul li {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 18pt; }
+
+a {
+  text-decoration: none;
+  font-size: 26pt;
+  margin: 0 10px;
+  color: white; }

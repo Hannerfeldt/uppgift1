@@ -53,10 +53,12 @@ router.get("/:id", async (req, res) => {
     tempArr = []
     pageThing = req.params.id * 5;
     console.log("mjau")
+
     for (i = pageThing; i < (pageThing + 5); i++) {
         arr[i] == undefined ? console.log("end of array")
             : tempArr.push(arr[i])
     }
+
     arrLength = arr.length
     res.render("list", { tempArr, arrLength })
 })
@@ -95,10 +97,16 @@ router.post("/update/:id", async (req, res) => {
 })
 router.get("/sort/sort", async (req, res) => {
     console.log("Voof")
-    await Item.find({}).sort({date: -1}).exec(()=>{console.log("list sorted")})
-    arr.sort((a, b) => a.date - b.date)
-    console.log(arr);
-
+    arr = []
+    let so =  await Item.find({}).sort({date:-1})
+    so.forEach((r)=>{
+        arr.push(r)
+    })
+    //arr.sort((a, b) => a.date - b.date)
+    setTimeout(() => {
+        console.log(arr)    
+    }, 700);
+    
     res.redirect("/")
 })
 

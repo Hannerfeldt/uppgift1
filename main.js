@@ -30,3 +30,5 @@ app.use(router);
 port = process.env.PORT || 8000;
 
 app.listen(port, () => console.log(`Live at ${port}...`));
+
+module.exports = {app}

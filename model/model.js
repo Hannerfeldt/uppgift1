@@ -5,8 +5,6 @@ const listSchema = new mongoose.Schema({
     date: {
         type: Date, default: Date.now
     }
-
 })
-
 
 module.exports = listSchema

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Update</title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <h1>Edit <%= itemRes.listitem %></h1>
     <form action="/update/<%= index %>" method="Post">
-        <input type="text" name="listitem">
+        <input type="text" name="listitem" placeholder="<%= itemRes.listitem %>">
         <button type="submit">Edit</button>
     </form>
 
