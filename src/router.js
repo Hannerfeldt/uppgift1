@@ -110,4 +110,4 @@ router.get("/sort/sort", async (req, res) => {
     res.redirect("/")
 })
 
-module.exports = router
+module.exports = { router }
