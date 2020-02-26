@@ -3,8 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const { router } = require('./src/router');
-//const dbURL = process.env.MONGO_ATLAS_URL || require('./config/config').databaseURL
-const dbURL = require('./config/config').databaseURL
+const dbURL = process.env.MONGO_ATLAS_URL
 dotenv.config({ path: './config/.env' });
 
 var bodyParser = require('body-parser')
