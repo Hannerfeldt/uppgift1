@@ -6,8 +6,13 @@ const { router } = require('./src/router');
 const dbURL = process.env.MONGO_ATLAS_URL
 dotenv.config({ path: './config/.env' });
 
-if (dbURL == undefined)
-    dbURL = require('./config/config').databaseURL
+if (dbURL == undefined) {
+    try {
+        dbURL = require('./config/config').databaseURL
+    } catch (exeception) {
+        console.log(exeception + " dsada")
+    }
+}
 
 var bodyParser = require('body-parser')
 // parse application/x-www-form-urlencoded
