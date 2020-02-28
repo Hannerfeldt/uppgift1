@@ -4,11 +4,10 @@
     "version": "1.0.0",
     "main": "main.js",
     "scripts": {
-        "start": "npm run build && nodemon index",
+        "start": "node dist/bundle.js",
         "cypress:open": "cypress open",
         "cy:run": "cypress run -- --record --spec  'cypress/integration/todo_ui_spec.js'",
         "unittest": "mocha",
-        "test": "npm run unittest & npm run cy:run",
         "sass": "node-sass --watch scss -o public",
         "dev": "npm-run-all --parallel start sass",
         "build": "webpack"
