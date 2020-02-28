@@ -11,7 +11,7 @@
         "test": "npm run unittest & npm run cy:run",
         "sass": "node-sass --watch scss -o public",
         "dev": "npm-run-all --parallel start sass",
-        "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files"
+        "build": "webpack"
     },
     "repository": {
         "type": "git",
