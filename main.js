@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const { router } = require('./src/router');
-const dbURL = process.env.MONGO_ATLAS_URL
+let dbURL = process.env.MONGO_ATLAS_URL
 dotenv.config({ path: './config/.env' });
 
 if (dbURL == undefined) {
